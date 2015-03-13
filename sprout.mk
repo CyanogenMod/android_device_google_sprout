@@ -71,6 +71,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/ueventd.sprout.rc:root/ueventd.sprout.rc \
     $(LOCAL_PATH)/rootdir/root/init.sprout.usb.rc:root/init.sprout.usb.rc
 
+#Offline Charging
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/root/charger:root/charger \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_0.png:root/res/images/charger/battery_0.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_1.png:root/res/images/charger/battery_1.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_2.png:root/res/images/charger/battery_2.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_3.png:root/res/images/charger/battery_3.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_4.png:root/res/images/charger/battery_4.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_5.png:root/res/images/charger/battery_5.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_charge.png:root/res/images/charger/battery_charge.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_fail.png:root/res/images/charger/battery_fail.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_scale.png:root/res/images/charger/battery_scale.png
+
 DEVICE_PACKAGE_OVERLAYS := device/google/sprout/overlay
 	
 PRODUCT_COPY_FILES += \
